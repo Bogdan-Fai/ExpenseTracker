@@ -1,2 +1,255 @@
-# ExpenseTracker
-ExpenseTracker is a console application for managing financial transactions, built on .NET 7 using Entity Framework Core and SQLite.
+# Подробное описание работы программы ExpenseTracker
+
+## 1. Общая архитектура проекта
+
+ExpenseTracker - это консольное приложение для управления финансовыми транзакциями, построенное на основе .NET 7 с использованием Entity Framework Core и SQLite.
+
+### Структура проекта
+
+```
+ExpenseTracker/
+├── ExpenseTracker.csproj          - Файл проекта
+├── Program.cs                     - Главная точка входа
+├── Transaction.cs                 - Модель транзакции
+├── TransactionsContext.cs         - Контекст базы данных
+├── QueryService.cs                - Сервис для запросов
+├── ReportService.cs               - Сервис для генерации отчетов
+├── FileImportService.cs           - Сервис импорта из файлов
+├── appsettings.json               - Конфигурация приложения
+├── transactions_sample.jsonl      - Пример данных в JSON Lines
+├── transactions.txt               - Пример данных в текстовом формате
+└── expensetracker.db              - База данных SQLite
+```
+
+## 2. Основные компоненты
+
+### 2.1 Модель данных (Transaction.cs)
+
+```csharp
+public class Transaction
+{
+    public int Id { get; set; }           // Идентификатор транзакции
+    public DateTime Date { get; set; }    // Дата транзакции
+    public string Category { get; set; }  // Категория (например, "Продукты", "Транспорт")
+    public decimal Amount { get; set; }   // Сумма (положительная для доходов, отрицательная для расходов)
+    public string Description { get; set; } // Описание транзакции
+}
+```
+
+### 2.2 Контекст базы данных (TransactionsContext.cs)
+
+Контекст базы данных настраивается для работы с SQLite и содержит набор транзакций:
+
+```csharp
+public class TransactionsContext : DbContext
+{
+    public DbSet<Transaction> Transactions { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite("Data Source=expensetracker.db");
+    }
+}
+```
+
+### 2.3 Сервисы
+
+#### QueryService.cs
+Обеспечивает основные операции CRUD:
+- `GetAllTransactions()` - получение всех транзакций
+- `GetTransactionById(int id)` - получение транзакции по ID
+- `AddTransaction(Transaction transaction)` - добавление новой транзакции
+- `UpdateTransaction(Transaction transaction)` - обновление транзакции
+- `DeleteTransaction(int id)` - удаление транзакции
+
+#### ReportService.cs
+Генерирует отчеты:
+- `GenerateReport()` - создает текстовый отчет с суммарными данными
+- `GenerateCategoryReport()` - создает отчет по категориям
+
+#### FileImportService.cs
+Импортирует данные из файлов:
+- `ImportFromJsonl(string filePath)` - импорт из JSON Lines
+- `ImportFromText(string filePath)` - импорт из текстового файла
+
+## 3. Основной цикл программы (Program.cs)
+
+Программа работает в интерактивном режиме, предоставляя пользователю меню с возможностями:
+
+1. **Просмотр всех транзакций** - отображает список всех транзакций в табличном формате
+2. **Добавление новой транзакции** - позволяет ввести данные для новой транзакции
+3. **Редактирование транзакции** - позволяет изменить существующую транзакцию
+4. **Удаление транзакции** - удаляет транзакцию по ID
+5. **Генерация отчета** - создает текстовый отчет по транзакциям
+6. **Импорт данных** - импортирует транзакции из файла
+7. **Выход** - завершает работу программы
+
+### Пример работы с меню
+
+```
+Expense Tracker
+1. Просмотр всех транзакций
+2. Добавление транзакции
+3. Редактирование транзакции
+4. Удаление транзакции
+5. Генерация отчета
+6. Импорт данных
+7. Выход
+Выберите действие:
+```
+
+## 4. Работа с базой данных
+
+### 4.1 Инициализация базы данных
+
+При первом запуске приложения создается файл `expensetracker.db` в формате SQLite. Если файл уже существует, приложение подключается к существующей базе данных.
+
+### 4.2 Миграции
+
+Проект использует Entity Framework Core, поэтому для изменения структуры базы данных необходимо создавать миграции:
+
+```bash
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
+
+### 4.3 Работа с транзакциями
+
+Все операции с базой данных выполняются через контекст `TransactionsContext`:
+
+```csharp
+using (var context = new TransactionsContext())
+{
+    // Получение всех транзакций
+    var transactions = context.Transactions.ToList();
+
+    // Добавление новой транзакции
+    context.Transactions.Add(newTransaction);
+    context.SaveChanges();
+}
+```
+
+## 5. Импорт данных
+
+### 5.1 Импорт из JSON Lines
+
+Файл `transactions_sample.jsonl` содержит данные в формате JSON Lines, где каждая строка - это отдельный JSON объект:
+
+```json
+{"Date":"2023-01-01","Category":"Продукты","Amount":1000,"Description":"Покупка продуктов"}
+{"Date":"2023-01-02","Category":"Транспорт","Amount":500,"Description":"Проезд в метро"}
+```
+
+### 5.2 Импорт из текстового файла
+
+Файл `transactions.txt` содержит данные в текстовом формате:
+
+```
+2023-01-01|Продукты|1000|Покупка продуктов
+2023-01-02|Транспорт|500|Проезд в метро
+```
+
+## 6. Генерация отчетов
+
+Отчеты генерируются в текстовом формате и содержат:
+- Общую сумму доходов
+- Общую сумму расходов
+- Баланс (доходы - расходы)
+- Статистику по категориям
+
+## 7. Запуск и выполнение
+
+### 7.1 Сборка проекта
+
+```bash
+cd 5лабаООП\ExpenseTracker
+dotnet build
+```
+
+### 7.2 Запуск приложения
+
+```bash
+dotnet run
+```
+
+### 7.3 Пример работы
+
+```
+Expense Tracker
+1. Просмотр всех транзакций
+2. Добавление транзакции
+3. Редактирование транзакции
+4. Удаление транзакции
+5. Генерация отчета
+6. Импорт данных
+7. Выход
+Выберите действие: 1
+
+ID  Дата        Категория    Сумма    Описание
+1   2023-01-01  Продукты     1000.00  Покупка продуктов
+2   2023-01-02  Транспорт    500.00   Проезд в метро
+```
+
+## 8. Особенности реализации
+
+### 8.1 Использование DI (Dependency Injection)
+
+Проект использует встроенный DI контейнер .NET для управления зависимостями:
+
+```csharp
+var services = new ServiceCollection();
+services.AddSingleton<QueryService>();
+services.AddSingleton<ReportService>();
+services.AddSingleton<FileImportService>();
+var serviceProvider = services.BuildServiceProvider();
+```
+
+### 8.2 Асинхронное программирование
+
+Основные операции с базой данных выполняются асинхронно:
+
+```csharp
+var transactions = await queryService.GetAllTransactionsAsync();
+```
+
+### 8.3 Обработка ошибок
+
+Приложение обрабатывает основные ошибки:
+- Ошибки подключения к базе данных
+- Ошибки валидации данных
+- Ошибки чтения файлов
+
+## 9. Конфигурация
+
+Конфигурация приложения хранится в файле `appsettings.json`:
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information"
+    }
+  }
+}
+```
+
+## 10. Тестирование
+
+Для тестирования можно использовать:
+- Файл `transactions_sample.jsonl` для импорта тестовых данных
+- Файл `transactions.txt` для импорта тестовых данных в текстовом формате
+- Ручное добавление транзакций через меню
+
+## 11. Возможные улучшения
+
+1. **Добавление графического интерфейса** (WPF или WinForms)
+2. **Реализация аутентификации и авторизации**
+3. **Добавление возможности экспорта данных в Excel/CSV**
+4. **Реализация графических отчетов**
+5. **Добавление возможности работы с несколькими счетами**
+6. **Реализация планирования бюджета**
+7. **Добавление уведомлений о важных транзакциях**
+
+## 12. Заключение
+
+ExpenseTracker - это полнофункциональное консольное приложение для управления финансовыми транзакциями, которое демонстрирует использование современных технологий .NET, таких как Entity Framework Core, Dependency Injection и асинхронное программирование. Приложение может быть использовано как основа для более сложных финансовых систем.
