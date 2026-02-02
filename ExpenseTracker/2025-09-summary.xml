@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCategorySummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategorySummary>
+    <Category>Food</Category>
+    <TotalAmount>100.0</TotalAmount>
+    <TransactionCount>8</TransactionCount>
+  </CategorySummary>
+  <CategorySummary>
+    <Category>Transport</Category>
+    <TotalAmount>13.75</TotalAmount>
+    <TransactionCount>5</TransactionCount>
+  </CategorySummary>
+</ArrayOfCategorySummary>

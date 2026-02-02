@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\fileimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:fileimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\expensetracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:expensetracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\transactionscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:transactionscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|c:\\users\\\u043A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\expensetracker\\querysercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1EF2F5-696F-44BB-B9F7-B3A5912882A2}|ExpenseTracker.csproj|solutionrelative:querysercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\bin\\Debug\\net8.0\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\bin\\Debug\\net8.0\\appsettings.json",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\bin\\Debug\\net8.0\\appsettings.json",
+              "RelativeToolTip": "bin\\Debug\\net8.0\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T19:21:18.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExpenseTracker",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\ExpenseTracker.csproj",
+              "RelativeDocumentMoniker": "ExpenseTracker.csproj",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\ExpenseTracker.csproj",
+              "RelativeToolTip": "ExpenseTracker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T19:16:48.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionsContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\TransactionsContext.cs",
+              "RelativeDocumentMoniker": "TransactionsContext.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\TransactionsContext.cs",
+              "RelativeToolTip": "TransactionsContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T18:59:09.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\Transaction.cs",
+              "RelativeDocumentMoniker": "Transaction.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\Transaction.cs",
+              "RelativeToolTip": "Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T18:58:58.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\ReportService.cs",
+              "RelativeDocumentMoniker": "ReportService.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\ReportService.cs",
+              "RelativeToolTip": "ReportService.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAIwJMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T18:58:41.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileImportService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\FileImportService.cs",
+              "RelativeDocumentMoniker": "FileImportService.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\FileImportService.cs",
+              "RelativeToolTip": "FileImportService.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAIwOsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T18:57:45.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuerySercive.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\QuerySercive.cs",
+              "RelativeDocumentMoniker": "QuerySercive.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\QuerySercive.cs",
+              "RelativeToolTip": "QuerySercive.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T08:18:30.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u041A\u043E\u0441\u043C\u043E\u043B\u0435\u0442_v2.1\\source\\repos\\ExpenseTracker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAqwBIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T08:14:24.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

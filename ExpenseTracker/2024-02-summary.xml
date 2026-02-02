@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCategorySummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategorySummary>
+    <Category>Коммунальные</Category>
+    <TotalAmount>3500.75</TotalAmount>
+    <TransactionCount>1</TransactionCount>
+  </CategorySummary>
+  <CategorySummary>
+    <Category>Развлечения</Category>
+    <TotalAmount>1200</TotalAmount>
+    <TransactionCount>1</TransactionCount>
+  </CategorySummary>
+  <CategorySummary>
+    <Category>Еда</Category>
+    <TotalAmount>800.25</TotalAmount>
+    <TransactionCount>1</TransactionCount>
+  </CategorySummary>
+</ArrayOfCategorySummary>

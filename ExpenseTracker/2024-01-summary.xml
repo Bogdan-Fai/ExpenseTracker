@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCategorySummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategorySummary>
+    <Category>Еда</Category>
+    <TotalAmount>1500.5</TotalAmount>
+    <TransactionCount>1</TransactionCount>
+  </CategorySummary>
+  <CategorySummary>
+    <Category>Транспорт</Category>
+    <TotalAmount>500</TotalAmount>
+    <TransactionCount>1</TransactionCount>
+  </CategorySummary>
+</ArrayOfCategorySummary>

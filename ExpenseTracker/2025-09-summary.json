@@ -1,0 +1,12 @@
+[
+  {
+    "Category": "Food",
+    "TotalAmount": 100.0,
+    "TransactionCount": 8
+  },
+  {
+    "Category": "Transport",
+    "TotalAmount": 13.75,
+    "TransactionCount": 5
+  }
+]

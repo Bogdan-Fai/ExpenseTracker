@@ -1,0 +1,5 @@
+C:\Users\Космолет_v2.1\source\repos\ExpenseTracker\obj\Debug\net6.0\ExpenseTracker.csproj.AssemblyReference.cache
+C:\Users\Космолет_v2.1\source\repos\ExpenseTracker\obj\Debug\net6.0\ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Космолет_v2.1\source\repos\ExpenseTracker\obj\Debug\net6.0\ExpenseTracker.AssemblyInfoInputs.cache
+C:\Users\Космолет_v2.1\source\repos\ExpenseTracker\obj\Debug\net6.0\ExpenseTracker.AssemblyInfo.cs
+C:\Users\Космолет_v2.1\source\repos\ExpenseTracker\obj\Debug\net6.0\ExpenseTracker.csproj.CoreCompileInputs.cache
